@@ -59,6 +59,38 @@ default void method(int a) {реализация}
 InterfaceA.methodB();
 Статические методы не наследуются (ни дочерними классами, ни дочерними интерфейсами)
 
+Перечисления содержат в себе набор констант
+enum Transport {
+    CAR, BOAT, AIRPLANE
+}
+Константы неявно задаются как static public
+
+Transport tp =  Transport.CAR;
+
+Метод values() - возвращает массив элементов перечисления
+Метод valuesof(String str) - возвращает константу соответствующую строке в параметре
+
+У перечисления могут быть определены поля, методы и конструктор.
+enum Transport {
+    //само перечисление, для каждого элемента вызывается конструктор с параметром
+    CAR(10), BOAT(20), AIRPLANE(100);
+    
+    public int speed;
+    
+    Transport(int s) {
+        speed = s;
+    }
+    
+    public int getSpeed() {
+        return speed;
+    }
+    
+    public void setSpeed(int s) {
+        speed = s
+    }
+}
+
+
 
 
 
