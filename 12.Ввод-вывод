@@ -1,0 +1,25 @@
+Классы io
+
+Основные абстрактные классы InputStream, OutputStream. 
+От них образованы FileInputSream, FileOutputSream для работы с файлами. 
+BufferedInputSream, BufferedOutputStream - буферизованные потоки.
+DataInputStream, DataOutputStream - для чтения и записи  стандартных типов. Имеют методы типа ReadInteger (надо проверить). 
+ObjectInputStream, ObjectOutputStream - позволяют сераилизовывать объекты.
+Так же есть классы для непоследовательного доступа к файлам.
+
+Классы FileReader, FileWriter - расширяют классы для работы с файлами с кодировкой Unicode.
+
+При работе с файлами их необходимо открывать в блоке try catch и закрывать в блоке finally. 
+
+С какой-то версии появился try catch с ресурсами
+try (открытие ресурса) { использоваение ресурса } catch () {}
+в нем не надо закрывать открытые ресурсы
+
+Для работы с файлами и каталогами класс File
+
+
+
+Классы nio
+
+
+
